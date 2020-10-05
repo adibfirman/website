@@ -36,6 +36,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, desc, welcomeMessage, is
             justifyContent="center"
             alignItems="center"
             width="max-content"
+            borderRadius="4px"
           >
             <Text>Bergabung</Text>
             <Icon name="arrow-forward" size="21px" ml="8px" />
