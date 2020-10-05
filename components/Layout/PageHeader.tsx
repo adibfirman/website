@@ -11,8 +11,8 @@ interface PageHeaderProps {
 const PageHeader: React.FC<PageHeaderProps> = ({ title, desc, welcomeMessage, isHomePage = false }) => {
   if (isHomePage) {
     return (
-      <Box backgroundColor="gray08" as="header" padding="6.1em 3em">
-        <Box maxWidth="50%">
+      <Box backgroundColor="gray08" as="header" padding={['3.1em 1em', null, null, '6.1em 3em']}>
+        <Box maxWidth={['100%', null, null, '50%']}>
           <Heading fontFamily="body" fontWeight="100" mb="8px" as="h2" textTransform="uppercase" color="lightBlue" fontSize={20}>
             {welcomeMessage}
           </Heading>
@@ -34,6 +34,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, desc, welcomeMessage, is
             gridAutoFlow="column"
             gridAutoColumns="max-content"
             justifyContent="center"
+            alignItems="center"
             width="max-content"
           >
             <Text>Bergabung</Text>
